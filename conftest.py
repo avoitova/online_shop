@@ -12,5 +12,3 @@ def initialize_driver():
     print("Close Driver")
     driver.close()
 
-
-

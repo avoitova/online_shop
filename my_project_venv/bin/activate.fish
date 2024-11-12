@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/aelita/Projects/some/website_makeup/my_project_venv"
+set -gx VIRTUAL_ENV "/home/aelita/Projects/some/git_project/online_shop/my_project_venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

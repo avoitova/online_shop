@@ -1,6 +1,4 @@
 [project]
 
 [tool.pytest.ini_options]
-addopts = [
-    "--import-mode=importlib",
-]
+addopts = "-rA -v --html=AutomationPytestReport.html"
