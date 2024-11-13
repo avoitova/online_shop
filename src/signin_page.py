@@ -8,6 +8,10 @@ class SignInPage(BasePage):
     login_field = (By.ID, 'login')
     password_field = (By.ID, 'pw')
     signin_button = (By.XPATH,"//button[contains(text(),'logga in')]")
+    wrong_credentials_popup = (By.XPATH, "//div[@class='forgot-pass-link']")
+    
+
+   
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -20,6 +24,9 @@ class SignInPage(BasePage):
         self.click(self.signin_button)
         return BasePage(self.driver)
     
+    def check_wrong_credentials_popup(self):
+        message = self.find(self.wrong_credentials_popup).text
+        return message
         
 
     
