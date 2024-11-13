@@ -15,5 +15,6 @@ class TestAddToChart(BaseTest):
       product_page = search_result.select_first_product_from_list()
       chart_page = product_page.add_product_to_chart()
       result = chart_page.search_product_in_chart(TestData.search_product)
+      chart_page.close_crart()
       assert result, "expexted product is not in te chart"
    

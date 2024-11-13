@@ -8,6 +8,8 @@ class ChartPage(BasePage):
     product_list = (By.XPATH, "//div[@class='product-list_product-item']")
     item_header_locator = (By.XPATH, "//div[@class='product-list_product-item']//div[@class='product__header']")
     item_descr_locator = (By.XPATH, "//div[@class='product-list_product-item']//div[@class='product__header-desc']")
+    close_chart = (By.XPATH, "//div[@class='popup__window']//div[@class='popup-close close-icon']")
+
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -27,3 +29,6 @@ class ChartPage(BasePage):
                 return True
             else:
                 return False
+    
+    def close_crart(self):
+        self.click(self.close_chart)

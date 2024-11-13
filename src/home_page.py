@@ -3,6 +3,7 @@ from src.signin_page import SignInPage
 from selenium.webdriver.common.by import By
 from src.search_result_page import SearchResultPage
 from selenium.webdriver.common.keys import Keys
+from selenium.common.exceptions import NoSuchElementException
 
 
 class HomePage(BasePage):
@@ -14,6 +15,8 @@ class HomePage(BasePage):
     search_button = (By.XPATH, "//div[@class='search-button']")
     serch_field = (By.XPATH, "//input[@id='search-input']")
     logo_button = (By.XPATH, "//a[@class='logo with-slogan']")
+    logout_button = (By.XPATH, "//a[contains(text(),'Logga ut')]")
+    
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -37,3 +40,16 @@ class HomePage(BasePage):
     
     def goto_main_page(self):
         self.click(self.logo_button)
+
+    def logout(self):
+        try:
+            elem = self.find(self.account_page)
+            if elem:
+                elem.click()
+            elem = self.find(self.logout_button)
+            if elem:
+                elem.click()
+        except NoSuchElementException:
+            print("No logout needed")
+
+        
