@@ -1,0 +1,1 @@
+[35mDEBUG   [0m tests.set_logger:test_login.py:39 incorrect email was entered

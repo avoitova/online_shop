@@ -1,0 +1,2 @@
+[32mINFO    [0m tests.set_logger:test_search.py:17 Search product
+[32mINFO    [0m tests.set_logger:test_search.py:19 check if first search result corresponds to the search parametrs

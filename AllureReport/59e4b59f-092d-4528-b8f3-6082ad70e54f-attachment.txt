@@ -1,0 +1,3 @@
+[35mDEBUG   [0m conftest:test_login.py:38 incorrect email was entered
+[35mDEBUG   [0m conftest:test_login.py:40 correct password was entered
+[35mDEBUG   [0m conftest:test_login.py:42 check allert appearence

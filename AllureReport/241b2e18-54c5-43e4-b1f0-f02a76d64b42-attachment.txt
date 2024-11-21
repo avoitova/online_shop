@@ -1,0 +1,2 @@
+[33mWARNING [0m tests.test_login:test_login.py:28 message1
+[31m[1mERROR   [0m tests.test_login:test_login.py:29 message2

@@ -1,4 +1,4 @@
 [project]
 
 [tool.pytest.ini_options]
-addopts = "-rA -v --html=AutomationPytestReport.html"
+addopts = "-rA -v --html=AutomationPytestReport.html --alluredir=AllureReport"

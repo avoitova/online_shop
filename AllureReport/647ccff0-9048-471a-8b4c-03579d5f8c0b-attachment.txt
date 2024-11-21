@@ -1,0 +1,4 @@
+[35mDEBUG   [0m conftest:test_login.py:19 logout if needed
+[35mDEBUG   [0m conftest:test_login.py:23 correct email was entered
+[35mDEBUG   [0m conftest:test_login.py:25 correct password was entered
+[35mDEBUG   [0m conftest:test_login.py:28 account holder is Aelita

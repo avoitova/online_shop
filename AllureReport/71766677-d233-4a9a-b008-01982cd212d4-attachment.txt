@@ -1,0 +1,4 @@
+[33mWARNING [0m tests.set_logger:test_login.py:21 message1
+[1m[31mERROR   [0m tests.set_logger:test_login.py:22 message2
+[35mDEBUG   [0m tests.set_logger:test_login.py:24 correct email was entered
+[35mDEBUG   [0m tests.set_logger:test_login.py:26 correct password was entered
