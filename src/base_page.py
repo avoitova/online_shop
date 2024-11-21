@@ -55,9 +55,5 @@ class BasePage:
         WebDriverWait(self.driver, 10).until(EC.frame_to_be_available_and_switch_to_it(self.iframe_locator))
         WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(self.captcha_checkbox_locator)).click()
 
-    def get_attribute_value(self):
-        el = self.driver.find_element(By.XPATH,"//input[@name='name']")
-        result = el.get_attribute("value")
-        return result
+   
     
-

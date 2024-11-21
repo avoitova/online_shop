@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from src.search_result_page import SearchResultPage
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
+import logging
 
 
 class HomePage(BasePage):
@@ -16,6 +17,8 @@ class HomePage(BasePage):
     serch_field = (By.XPATH, "//input[@id='search-input']")
     logo_button = (By.XPATH, "//a[@class='logo with-slogan']")
     logout_button = (By.XPATH, "//a[contains(text(),'Logga ut')]")
+    account_fornamn = (By.XPATH,"//input[@name='name']")
+    
     
 
     def __init__(self, driver):
@@ -52,4 +55,5 @@ class HomePage(BasePage):
         except NoSuchElementException:
             print("No logout needed")
 
-        
+    def get_account_name(self):
+        return self.find(self.account_fornamn).get_attribute("value")
