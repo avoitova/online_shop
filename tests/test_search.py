@@ -4,7 +4,6 @@ from src.home_page import HomePage
 from tests.test_login import BaseTest
 
 
-
 class TestSearch(BaseTest):
 
    

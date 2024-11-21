@@ -1,0 +1,15 @@
+2024-11-19 16:48:03,601 - tests.set_logger - DEBUG - logout if needed
+2024-11-19 16:48:08,810 - tests.set_logger - DEBUG - correct email was entered
+2024-11-19 16:48:08,974 - tests.set_logger - DEBUG - correct password was entered
+2024-11-19 16:48:11,043 - tests.set_logger - DEBUG - account holder is Aelita
+2024-11-20 22:47:32,986 - conftest - DEBUG - logout if needed
+2024-11-20 22:47:43,200 - conftest - DEBUG - correct email was entered
+2024-11-20 22:47:43,337 - conftest - DEBUG - correct password was entered
+2024-11-20 22:47:45,508 - conftest - DEBUG - account holder is Aelita
+2024-11-21 10:39:20,921 - conftest - DEBUG - logout if needed
+2024-11-21 10:39:26,144 - conftest - DEBUG - correct email was entered
+2024-11-21 10:39:26,319 - conftest - DEBUG - correct password was entered
+2024-11-21 10:39:29,116 - conftest - DEBUG - account holder is Aelita
+2024-11-21 10:39:31,465 - conftest - DEBUG - incorrect email was entered
+2024-11-21 10:39:31,638 - conftest - DEBUG - correct password was entered
+2024-11-21 10:39:31,847 - conftest - DEBUG - check allert appearence
