@@ -15,7 +15,7 @@ class HomePage(BasePage):
     account_page = (By.XPATH, "//a[@class='header-office authorized']")
     search_button = (By.XPATH, "//div[@class='search-button']")
     serch_field = (By.XPATH, "//input[@id='search-input']")
-    logo_button = (By.XPATH, "//a[@class='logo with-slogan']")
+    logo_button = (By.XPATH, "//a[@class='backgroundless-logo with-slogan']")
     logout_button = (By.XPATH, "//a[contains(text(),'Logga ut')]")
     account_fornamn = (By.XPATH,"//input[@name='name']")
     
