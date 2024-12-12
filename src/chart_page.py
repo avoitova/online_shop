@@ -3,13 +3,14 @@ from selenium.webdriver.common.by import By
 
 
 class ChartPage(BasePage):
-    
 
     product_list = (By.XPATH, "//div[@class='product-list_product-item']")
-    item_header_locator = (By.XPATH, "//div[@class='product-list_product-item']//div[@class='product__header']")
-    item_descr_locator = (By.XPATH, "//div[@class='product-list_product-item']//div[@class='product__header-desc']")
-    close_chart = (By.XPATH, "//div[@class='popup__window']//div[@class='popup-close close-icon']")
-
+    item_header_locator = (
+        By.XPATH, "//div[@class='product-list_product-item']//div[@class='product__header']")
+    item_descr_locator = (
+        By.XPATH, "//div[@class='product-list_product-item']//div[@class='product__header-desc']")
+    close_chart = (
+        By.XPATH, "//div[@class='popup__window']//div[@class='popup-close close-icon']")
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -21,14 +22,13 @@ class ChartPage(BasePage):
             header = i.text
             if expected_text in header:
                 return True
-            else:
-                continue
+
         for i in items_descr_list:
             descr = i.text
             if expected_text in descr:
                 return True
-            else:
-                return False
-    
+
+        return False
+
     def close_crart(self):
         self.click(self.close_chart)
